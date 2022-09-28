@@ -7,16 +7,30 @@
         mc:Ignorable="d"
         Title="ПР 2 Вариант 14" Height="450" Width="400">
     <Grid>
-        <Label Grid.Row="0" Content="Введите хначение А" Margin="0,0,269,386" />
-        <TextBox x:Name="A"  Margin="176,2,10,392"/>
-        <Label Content="Введите значение В" Margin="0,33,269,355"/>
-        <TextBox x:Name="B"  Margin="176,34,10,359"/>
-        <Label Content="Введите значение C" Margin="0,64,269,324"/>
-        <TextBox x:Name="C"  Margin="176,65,10,328"/>
-        <Label Content="Введите значение p" Margin="0,95,269,293"/>
-        <TextBox x:Name="p"  Margin="176,96,10,297"/>
-        <Label Content="Введите значение q" Margin="0,126,269,262"/>
-        <TextBox x:Name="q"  Margin="176,127,10,266"/>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Введите хначение А"/>
+        <TextBox x:Name="A" Grid.Column="2" Margin="0,6,6,6"/>
+        <Label Grid.Row="1" Content="Введите значение В" Margin="0,6,0,0"/>
+        <TextBox x:Name="B" Grid.Column="2" Grid.Row="1" Margin="0,6,6,6"/>
+        <Label Grid.Row="2" Content="Введите значение C" Margin="0,6,0,0"/>
+        <TextBox x:Name="C" Grid.Column="2" Grid.Row="2" Margin="0,6,6,6"/>
+        <Label Grid.Row="3" Content="Введите значение p" Margin="0,6,6,6"/>
+        <TextBox x:Name="p" Grid.Column="2" Grid.Row="3" Margin="0,6,6,6"/>
+        <Label Grid.Row="4" Content="Введите значение q" Margin="0,6,0,0"/>
+        <TextBox x:Name="q"  Grid.Column="2" Grid.Row="4" Margin="0,6,6,6"/>
+        <TextBox x:Name="Itog" Grid.Row="5" Margin="10,10,6,10" Grid.ColumnSpan="5"/>
+        <Button x:Name="Reshiti" Grid.Column="2" Grid.Row="6" Content="Выполнить" Click="Reshiti_Click"/>
     </Grid>
 </Window>

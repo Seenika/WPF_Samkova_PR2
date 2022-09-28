@@ -25,5 +25,9 @@ namespace WPF_Samkova_PR2
             InitializeComponent();
         }
 
+        private void Reshiti_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
