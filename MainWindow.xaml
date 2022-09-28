@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Samkova_PR2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ПР 2 Вариант 14" Height="450" Width="400">
     <Grid>
+        <Label Grid.Row="0" Content="Введите хначение А" Margin="0,0,269,386" />
+        <TextBox x:Name="A"  Margin="176,2,10,392"/>
+        <Label Content="Введите значение В" Margin="0,33,269,355"/>
+        <TextBox x:Name="B"  Margin="176,34,10,359"/>
+        <Label Content="Введите значение C" Margin="0,64,269,324"/>
+        <TextBox x:Name="C"  Margin="176,65,10,328"/>
+        <Label Content="Введите значение p" Margin="0,95,269,293"/>
+        <TextBox x:Name="p"  Margin="176,96,10,297"/>
+        <Label Content="Введите значение q" Margin="0,126,269,262"/>
+        <TextBox x:Name="q"  Margin="176,127,10,266"/>
         
     </Grid>
 </Window>

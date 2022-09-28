@@ -24,5 +24,6 @@ namespace WPF_Samkova_PR2
         {
             InitializeComponent();
         }
+
     }
 }
