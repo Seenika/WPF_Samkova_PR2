@@ -29,6 +29,7 @@ namespace WPF_Samkova_PR2
         private void Reshiti_Click(object sender, RoutedEventArgs e)
         {
             Itog.Text += Environment.NewLine + "Практическая работа 2";
+            Itog.Text += Environment.NewLine + "Вариант 14";
             //Считывание и вывод значения А
             double A = double.Parse(TextA.Text);
             Itog.Text += Environment.NewLine + "A = " + A.ToString();
