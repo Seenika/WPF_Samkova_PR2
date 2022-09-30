@@ -23,10 +23,34 @@ namespace WPF_Samkova_PR2
         public MainWindow()
         {
             InitializeComponent();
+            Itog.Text = "Ст. гр. ИСиП Самкова К.С.";
         }
 
         private void Reshiti_Click(object sender, RoutedEventArgs e)
         {
+            Itog.Text += Environment.NewLine + "Практическая работа 2";
+            //Считывание и вывод значения А
+            double A = double.Parse(TextA.Text);
+            Itog.Text += Environment.NewLine + "A = " + A.ToString();
+            //Считывание и вывод значения B
+            double B = double.Parse(TextB.Text);
+            Itog.Text += Environment.NewLine + "B = " + B.ToString();
+            //Считывание и вывод значения C
+            double C = double.Parse(TextC.Text);
+            Itog.Text += Environment.NewLine + "C = " + C.ToString();
+            //Считывание и вывод значения p
+            double p = double.Parse(Textp.Text);
+            Itog.Text += Environment.NewLine + "p = " + p.ToString();
+            //Считывание и вывод значения q
+            double q = double.Parse(Textq.Text);
+            Itog.Text += Environment.NewLine + "q = " + q.ToString();
+            //Вычисления
+            double Ap = A * p;
+            double Bq = B * q;
+            double AA = A * A;
+            double BB = B * B;
+            double Ver = Ap + Bq + C;
+            double Niz = Math.Sqrt(AA + BB);
 
         }
     }
