@@ -51,7 +51,9 @@ namespace WPF_Samkova_PR2
             double BB = B * B;
             double Ver = Ap + Bq + C;
             double Niz = Math.Sqrt(AA + BB);
-
+            double S = Ver / Niz;
+            //Вывод результата
+            Itog.Text += Environment.NewLine + "Результат S = " + S.ToString();
         }
     }
 }
